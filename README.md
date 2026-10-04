@@ -1,12 +1,18 @@
-BookSim Interconnection Network Simulator
-=========================================
+对于一个全新的仓库只需要
+# 1. 克隆仓库
+git clone https://github.com/booksim/booksim2.git
 
-BookSim is a cycle-accurate interconnection network simulator.
-Originally developed for and introduced with the [Principles and Practices of Interconnection Networks](http://cva.stanford.edu/books/ppin/) book, its functionality has since been continuously extended.
-The current major release, BookSim 2.0, supports a wide range of topologies such as mesh, torus and flattened butterfly networks, provides diverse routing algorithms and includes numerous options for customizing the network's router microarchitecture.
+# 2. 进入源代码目录
+cd booksim2/src
 
----
+# 3. 编译
+make
 
-If you use BookSim in your research, we would appreciate the following citation in any publications to which it has contributed:
+# 运行测试代码
+./booksim ../runfiles/meshconfig
 
-Nan Jiang, Daniel U. Becker, George Michelogiannakis, James Balfour, Brian Towles, John Kim and William J. Dally. A Detailed and Flexible Cycle-Accurate Network-on-Chip Simulator. In *Proceedings of the 2013 IEEE International Symposium on Performance Analysis of Systems and Software*, 2013.
+对于我已经编译过的仓库
+
+# 直接运行测试代码就行
+
+./booksim ../runfiles/meshconfig
